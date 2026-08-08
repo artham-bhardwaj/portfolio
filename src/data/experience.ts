@@ -8,9 +8,9 @@ export const experience = {
     "REST APIs",
     "SQL",
     "Git",
-    "Unit testing",
-    "CI/CD",
-    "Agile",
+    "Problem Solving",
+    "Backend engineering",
+    "System thinking",
   ],
   education: {
     degree: "B.Tech — Computer Science and Engineering",
@@ -18,4 +18,5 @@ export const experience = {
     dates: "2021 – 2025",
     cgpa: "9.40/10",
   },
+  lastUpdated: "August 2026",
 };

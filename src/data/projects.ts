@@ -17,7 +17,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: "001",
-    title: "Build a Self-Healing Observability Platform",
+    title: "SentinelX — Self-Healing Observability Platform",
     slug: "sentinelx",
     difficulty: "Hard",
     status: "Accepted",
@@ -34,7 +34,7 @@ export const projects: Project[] = [
       "Grafana surfaces dashboards and operational context",
     ],
     githubUrl: "https://github.com/artham/sentinelx",
-    demoUrl: "https://example.com/sentinelx",
+    demoUrl: "/problems/sentinelx",
     problemStatement:
       "Design a platform that can monitor application health, surface diagnostics, and support automated recovery operations.",
     requirements: [
@@ -48,7 +48,7 @@ export const projects: Project[] = [
   },
   {
     id: "002",
-    title: "Build an Intelligent Market Analysis Platform",
+    title: "Wise Trade — Intelligent Market Analysis Platform",
     slug: "wise-trade",
     difficulty: "Hard",
     status: "Accepted",
@@ -64,7 +64,7 @@ export const projects: Project[] = [
       "REST APIs expose analysis results to downstream services",
     ],
     githubUrl: "https://github.com/artham/wise-trade",
-    demoUrl: "https://example.com/wise-trade",
+    demoUrl: "/problems/wise-trade",
     problemStatement:
       "Create a backend platform for financial market analysis that combines external data sources with useful analytical outputs.",
     requirements: [
