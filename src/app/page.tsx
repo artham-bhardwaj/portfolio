@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight, BriefcaseBusiness, Database, FileText, Rocket, Sparkles, Workflow } from "lucide-react";
 import { useState } from "react";
@@ -28,9 +29,10 @@ export default function Home() {
 
       <main className="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
         <section className="rounded-[28px] border border-white/10 bg-white/5 p-6 shadow-[0_20px_60px_rgba(0,0,0,0.35)] sm:p-8 lg:p-12">
-          <div className="grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]">
-            <div>
-              <p className="text-xs uppercase tracking-[0.35em] text-zinc-400">ARTHAM BHARDWAJ</p>
+          <div className="grid items-center gap-8 lg:grid-cols-[1.15fr_0.85fr]">
+            <div className="hero-fade-up">
+              <p className="text-xs uppercase tracking-[0.35em] text-zinc-400">Meet the Engineer</p>
+              <p className="mt-4 text-xs uppercase tracking-[0.35em] text-zinc-400 sm:text-sm">ARTHAM BHARDWAJ</p>
               <h1 className="mt-4 text-4xl font-semibold tracking-tight text-zinc-50 sm:text-5xl lg:text-6xl">Software Engineer</h1>
               <p className="mt-4 text-base tracking-[0.16em] text-zinc-400 sm:text-lg">Java • Spring Boot • Backend • System Design</p>
               <p className="mt-6 max-w-xl text-lg leading-8 text-zinc-300">{profile.summary}</p>
@@ -48,21 +50,36 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="rounded-[24px] border border-white/10 bg-[#10141d] p-5 sm:p-6">
-              <p className="text-xs uppercase tracking-[0.32em] text-zinc-500">WHAT WOULD YOU LIKE TO KNOW?</p>
-              <div className="mt-5 grid gap-3">
-                {questionCards.map((card) => (
-                  <Link
-                    key={card.label}
-                    href={card.href}
-                    className="group rounded-xl border border-white/10 bg-zinc-900/80 p-4 text-left transition hover:border-zinc-600 hover:bg-zinc-900"
-                  >
-                    <div className="flex items-center justify-between gap-3">
-                      <span className="text-sm font-medium text-zinc-200">{card.label}</span>
-                      <ArrowRight size={16} className="text-zinc-500 transition group-hover:translate-x-1 group-hover:text-zinc-100" />
-                    </div>
-                  </Link>
-                ))}
+            <div className="flex flex-col gap-5">
+              <div className="hero-fade-up relative mx-auto w-full max-w-[360px] overflow-hidden rounded-[28px] border border-white/10 bg-[#10141d] p-3 shadow-[0_20px_45px_rgba(0,0,0,0.28)] sm:max-w-[420px] lg:max-w-[380px]">
+                <div className="relative h-[320px] overflow-hidden rounded-[22px] bg-zinc-900 sm:h-[380px] lg:h-[420px]">
+                  <Image
+                    src="/assets/images/potfolioselfimage.jpeg"
+                    alt="Artham Bhardwaj - Software Engineer"
+                    fill
+                    priority
+                    sizes="(max-width: 1024px) 80vw, 32vw"
+                    className="object-cover object-center"
+                  />
+                </div>
+              </div>
+
+              <div className="rounded-[24px] border border-white/10 bg-[#10141d] p-5 sm:p-6">
+                <p className="text-xs uppercase tracking-[0.32em] text-zinc-500">WHAT WOULD YOU LIKE TO KNOW?</p>
+                <div className="mt-5 grid gap-3">
+                  {questionCards.map((card) => (
+                    <Link
+                      key={card.label}
+                      href={card.href}
+                      className="group rounded-xl border border-white/10 bg-zinc-900/80 p-4 text-left transition hover:border-zinc-600 hover:bg-zinc-900"
+                    >
+                      <div className="flex items-center justify-between gap-3">
+                        <span className="text-sm font-medium text-zinc-200">{card.label}</span>
+                        <ArrowRight size={16} className="text-zinc-500 transition group-hover:translate-x-1 group-hover:text-zinc-100" />
+                      </div>
+                    </Link>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
