@@ -7,10 +7,12 @@ export const profile = {
   headline: "I build backend systems and solve engineering problems.",
   tags: ["Java", "Spring Boot", "Backend", "System Design", "SQL", "Python"],
   availability: "Available for opportunities",
-  github: "https://github.com/artham",
+  github: "https://github.com/artham-bhardwaj",
   linkedin: "https://www.linkedin.com/in/artham-bhardwaj",
   resume: "/resume.pdf",
   email: "contact@artham.dev",
+  leetcode: "https://leetcode.com/u/artham_63/",
+  gfg: "https://www.geeksforgeeks.org/profile/artham_63/",
   currentFocus: [
     "Deepening Java knowledge",
     "Building Spring Boot backend systems",
@@ -20,3 +22,4 @@ export const profile = {
   recentWork: ["SentinelX", "Java Collections", "1000+ DSA milestone"],
   lastUpdated: "August 2026",
 };
+1

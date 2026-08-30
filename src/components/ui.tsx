@@ -1,11 +1,28 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Circle, ExternalLink, GitBranch, Link2, Play } from "lucide-react";
+import { ArrowRight, CheckCircle2, Circle, ExternalLink, GitBranch, Link2, Moon, Play, Sun } from "lucide-react";
 import { motion } from "framer-motion";
 
 export function Navbar() {
+  const [isLightTheme, setIsLightTheme] = useState(false);
+
+  useEffect(() => {
+    const savedTheme = window.localStorage.getItem("portfolio-theme");
+    const shouldUseLightTheme = savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches);
+    document.documentElement.dataset.theme = shouldUseLightTheme ? "light" : "dark";
+    const frame = window.requestAnimationFrame(() => setIsLightTheme(shouldUseLightTheme));
+    return () => window.cancelAnimationFrame(frame);
+  }, []);
+
+  const toggleTheme = () => {
+    const nextIsLightTheme = !isLightTheme;
+    setIsLightTheme(nextIsLightTheme);
+    document.documentElement.dataset.theme = nextIsLightTheme ? "light" : "dark";
+    window.localStorage.setItem("portfolio-theme", nextIsLightTheme ? "light" : "dark");
+  };
+
   const navItems = [
     { label: "Home", href: "/" },
     { label: "Capabilities", href: "/#capabilities" },
@@ -18,7 +35,7 @@ export function Navbar() {
   ];
 
   return (
-    <nav className="sticky top-0 z-30 border-b border-white/10 bg-[#0b0d12]/85 backdrop-blur-xl">
+    <nav className="theme-nav sticky top-0 z-30 border-b border-white/10 bg-[#0b0d12]/85 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         <div className="flex items-center gap-3">
           <Link href="/" className="flex items-center gap-2 rounded-md border border-white/10 bg-white/5 px-2.5 py-1.5 text-sm font-medium text-zinc-100 transition hover:border-white/20">
@@ -33,6 +50,19 @@ export function Navbar() {
           </div>
         </div>
         <div className="flex items-center gap-2 sm:gap-3">
+          <button
+            type="button"
+            onClick={toggleTheme}
+            className="theme-toggle"
+            aria-label={`Switch to ${isLightTheme ? "dark" : "light"} theme`}
+            title={`Switch to ${isLightTheme ? "dark" : "light"} theme`}
+          >
+            <Sun size={13} strokeWidth={2.25} className="theme-toggle__sun" aria-hidden="true" />
+            <Moon size={12} strokeWidth={2.25} className="theme-toggle__moon" aria-hidden="true" />
+            <span className="theme-toggle__orb" aria-hidden="true">
+              {isLightTheme ? <Sun size={13} strokeWidth={2.5} /> : <Moon size={12} strokeWidth={2.5} />}
+            </span>
+          </button>
           <a href="https://github.com/artham" target="_blank" rel="noreferrer" className="rounded-md border border-white/10 bg-white/5 p-2 text-zinc-400 transition hover:border-white/20 hover:text-zinc-100" aria-label="GitHub profile">
             <GitBranch size={16} />
           </a>

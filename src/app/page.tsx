@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight, BriefcaseBusiness, Database, FileText, Rocket, Sparkles, Workflow } from "lucide-react";
 import { useState } from "react";
@@ -29,8 +28,8 @@ export default function Home() {
 
       <main className="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
         <section className="rounded-[28px] border border-white/10 bg-white/5 p-6 shadow-[0_20px_60px_rgba(0,0,0,0.35)] sm:p-8 lg:p-12">
-          <div className="grid items-center gap-8 lg:grid-cols-[1.15fr_0.85fr]">
-            <div className="hero-fade-up">
+          <div className="grid items-start gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12">
+            <div className="hero-fade-up max-w-3xl lg:py-5">
               <p className="text-xs uppercase tracking-[0.35em] text-zinc-400">Meet the Engineer</p>
               <p className="mt-4 text-xs uppercase tracking-[0.35em] text-zinc-400 sm:text-sm">ARTHAM BHARDWAJ</p>
               <h1 className="mt-4 text-4xl font-semibold tracking-tight text-zinc-50 sm:text-5xl lg:text-6xl">Software Engineer</h1>
@@ -50,21 +49,8 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col gap-5">
-              <div className="hero-fade-up relative mx-auto w-full max-w-[360px] overflow-hidden rounded-[28px] border border-white/10 bg-[#10141d] p-3 shadow-[0_20px_45px_rgba(0,0,0,0.28)] sm:max-w-[420px] lg:max-w-[380px]">
-                <div className="relative h-[320px] overflow-hidden rounded-[22px] bg-zinc-900 sm:h-[380px] lg:h-[420px]">
-                  <Image
-                    src="/assets/images/potfolioselfimage.jpeg"
-                    alt="Artham Bhardwaj - Software Engineer"
-                    fill
-                    priority
-                    sizes="(max-width: 1024px) 80vw, 32vw"
-                    className="object-cover object-center"
-                  />
-                </div>
-              </div>
-
-              <div className="rounded-[24px] border border-white/10 bg-[#10141d] p-5 sm:p-6">
+            <div className="hero-fade-up w-full lg:pt-1">
+              <div className="rounded-[24px] border border-white/10 bg-[#10141d] p-5 shadow-[0_20px_45px_rgba(0,0,0,0.28)] sm:p-6">
                 <p className="text-xs uppercase tracking-[0.32em] text-zinc-500">WHAT WOULD YOU LIKE TO KNOW?</p>
                 <div className="mt-5 grid gap-3">
                   {questionCards.map((card) => (
@@ -296,10 +282,10 @@ export default function Home() {
             </div>
 
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href="https://leetcode.com" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/5 px-3 py-2 text-sm text-zinc-200 hover:border-white/20 hover:bg-white/10">
+              <a href= {profile.leetcode} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/5 px-3 py-2 text-sm text-zinc-200 hover:border-white/20 hover:bg-white/10">
                 LeetCode <ArrowUpRight size={14} />
               </a>
-              <a href="https://www.geeksforgeeks.org" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/5 px-3 py-2 text-sm text-zinc-200 hover:border-white/20 hover:bg-white/10">
+              <a href={profile.gfg} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/5 px-3 py-2 text-sm text-zinc-200 hover:border-white/20 hover:bg-white/10">
                 GeeksforGeeks <ArrowUpRight size={14} />
               </a>
             </div>
