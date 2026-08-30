@@ -19,7 +19,7 @@ export const profile = {
     "Learning System Design",
     "Exploring AI + Backend integration",
   ],
-  recentWork: ["SentinelX", "Java Collections", "1000+ DSA milestone"],
+  recentWork: ["SentinelX", "Java Collections", "750+ DSA milestone"],
   lastUpdated: "August 2026",
 };
 1

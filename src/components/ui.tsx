@@ -127,7 +127,7 @@ export function StatsCard() {
   return (
     <section className="grid gap-3 rounded-xl border border-white/10 bg-white/5 p-4 sm:grid-cols-3 sm:p-5">
       <div className="rounded-lg border border-white/10 bg-zinc-950/70 p-4">
-        <div className="text-2xl font-semibold text-zinc-100">1000+</div>
+        <div className="text-2xl font-semibold text-zinc-100">750+</div>
         <div className="mt-1 text-sm text-zinc-500">DSA Problems Solved</div>
       </div>
       <div className="rounded-lg border border-white/10 bg-zinc-950/70 p-4">

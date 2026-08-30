@@ -247,7 +247,7 @@ export default function Home() {
               <h2 className="mt-3 text-2xl font-semibold text-zinc-100 sm:text-3xl">Problem solving workflow</h2>
             </div>
             <div className="flex items-center gap-2 rounded-full border border-white/10 bg-zinc-950/70 px-3 py-2 text-sm text-zinc-300">
-              <span className="text-xl font-semibold text-zinc-100">1000+</span>
+              <span className="text-xl font-semibold text-zinc-100">750+</span>
               <span>DSA Problems</span>
             </div>
           </div>
@@ -341,7 +341,7 @@ export default function Home() {
             <div className="rounded-2xl border border-white/10 bg-[#10141d] p-5">
               <FileText className="mb-4 text-zinc-100" size={18} />
               <h3 className="text-lg font-semibold text-zinc-100">Problem solving</h3>
-              <p className="mt-2 text-sm leading-6 text-zinc-400">1000+ DSA problems across fundamental patterns</p>
+              <p className="mt-2 text-sm leading-6 text-zinc-400">750+ DSA problems across fundamental patterns</p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-[#10141d] p-5">
               <Rocket className="mb-4 text-zinc-100" size={18} />

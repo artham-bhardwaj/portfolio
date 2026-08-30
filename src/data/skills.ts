@@ -119,7 +119,7 @@ export const technologyExplorer = [
   {
     name: "Data Structures & Algorithms",
     category: "Core",
-    where: "Applied through problem solving and structured algorithmic practice, with 1000+ problems completed.",
+    where: "Applied through problem solving and structured algorithmic practice, with 750+ problems completed.",
     related: ["Arrays", "Strings", "Hashing", "Binary Search", "Dynamic Programming"],
     project: "Problem Solving",
     projectHref: "/#problem-solving",
@@ -140,7 +140,7 @@ export const problemSolvingCategories = [
 
 export const achievements = [
   {
-    title: "1000+ DSA Problems",
+    title: "750+ DSA Problems",
     description: "Solved across competitive programming and interview preparation practice with a focus on fundamentals and patterns.",
   },
 ];
