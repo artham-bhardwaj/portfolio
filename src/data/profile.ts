@@ -10,7 +10,7 @@ export const profile = {
   github: "https://github.com/artham-bhardwaj",
   linkedin: "https://www.linkedin.com/in/artham-bhardwaj",
   resume: "/resume.pdf",
-  email: "contact@artham.dev",
+  email: "arthambhardwaj63@gmail.com",
   leetcode: "https://leetcode.com/u/artham_63/",
   gfg: "https://www.geeksforgeeks.org/profile/artham_63/",
   currentFocus: [
