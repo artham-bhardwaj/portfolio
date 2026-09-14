@@ -33,7 +33,7 @@ export const projects: Project[] = [
       "Prometheus scrapes and stores time-series data",
       "Grafana surfaces dashboards and operational context",
     ],
-    githubUrl: "https://github.com/artham/sentinelx",
+    githubUrl: "https://github.com/artham-bhardwaj/self-healing-platform",
     demoUrl: "/problems/sentinelx",
     problemStatement:
       "Design a platform that can monitor application health, surface diagnostics, and support automated recovery operations.",
@@ -63,7 +63,7 @@ export const projects: Project[] = [
       "PostgreSQL stores analytical snapshots and structured records",
       "REST APIs expose analysis results to downstream services",
     ],
-    githubUrl: "https://github.com/artham/wise-trade",
+    githubUrl: "https://github.com/artham-bhardwaj/wise-trade",
     demoUrl: "/problems/wise-trade",
     problemStatement:
       "Create a backend platform for financial market analysis that combines external data sources with useful analytical outputs.",
@@ -93,7 +93,7 @@ export const projects: Project[] = [
       "TypeScript keeps data and UI decoupled",
       "Tailwind enables restrained, maintainable styling",
     ],
-    githubUrl: "https://github.com/artham/portfolio",
+    githubUrl: "https://github.com/artham-bhardwaj/portfolio",
     demoUrl: "/",
     problemStatement:
       "Design a developer portfolio that communicates technical depth and creative direction with clarity.",

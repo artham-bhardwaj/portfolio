@@ -60,7 +60,7 @@ export const technologyExplorer = [
     related: ["Spring Boot", "REST APIs", "Spring Data JPA"],
     project: "SentinelX",
     projectHref: "/problems/sentinelx",
-    githubHref: "https://github.com/artham-bhardwaj/sentinelx",
+    githubHref: "https://github.com/artham-bhardwaj/self-healing-platform",
   },
   {
     name: "Spring Boot",
@@ -69,7 +69,7 @@ export const technologyExplorer = [
     related: ["REST APIs", "Spring MVC", "Spring Data JPA"],
     project: "SentinelX",
     projectHref: "/problems/sentinelx",
-    githubHref: "https://github.com/artham-bhardwaj/sentinelx",
+    githubHref: "https://github.com/artham-bhardwaj/self-healing-platform",
   },
   {
     name: "Python",
@@ -105,7 +105,7 @@ export const technologyExplorer = [
     related: ["Grafana", "Micrometer", "Observability"],
     project: "SentinelX",
     projectHref: "/problems/sentinelx",
-    githubHref: "https://github.com/artham-bhardwaj/sentinelx",
+    githubHref: "https://github.com/artham-bhardwaj/self-healing-platform",
   },
   {
     name: "Grafana",
@@ -114,7 +114,7 @@ export const technologyExplorer = [
     related: ["Prometheus", "Micrometer", "Observability"],
     project: "SentinelX",
     projectHref: "/problems/sentinelx",
-    githubHref: "https://github.com/artham-bhardwaj/sentinelx",
+    githubHref: "https://github.com/artham-bhardwaj/self-healing-platform",
   },
   {
     name: "Data Structures & Algorithms",
