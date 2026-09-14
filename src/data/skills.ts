@@ -60,7 +60,7 @@ export const technologyExplorer = [
     related: ["Spring Boot", "REST APIs", "Spring Data JPA"],
     project: "SentinelX",
     projectHref: "/problems/sentinelx",
-    githubHref: "https://github.com/artham/sentinelx",
+    githubHref: "https://github.com/artham-bhardwaj/sentinelx",
   },
   {
     name: "Spring Boot",
@@ -69,7 +69,7 @@ export const technologyExplorer = [
     related: ["REST APIs", "Spring MVC", "Spring Data JPA"],
     project: "SentinelX",
     projectHref: "/problems/sentinelx",
-    githubHref: "https://github.com/artham/sentinelx",
+    githubHref: "https://github.com/artham-bhardwaj/sentinelx",
   },
   {
     name: "Python",
@@ -78,7 +78,7 @@ export const technologyExplorer = [
     related: ["Django", "Flask", "REST APIs"],
     project: "Wise Trade",
     projectHref: "/problems/wise-trade",
-    githubHref: "https://github.com/artham/wise-trade",
+    githubHref: "https://github.com/artham-bhardwaj/wise-trade",
   },
   {
     name: "Django",
@@ -87,7 +87,7 @@ export const technologyExplorer = [
     related: ["Python", "PostgreSQL", "REST APIs"],
     project: "Wise Trade",
     projectHref: "/problems/wise-trade",
-    githubHref: "https://github.com/artham/wise-trade",
+    githubHref: "https://github.com/artham-bhardwaj/wise-trade",
   },
   {
     name: "PostgreSQL",
@@ -96,7 +96,7 @@ export const technologyExplorer = [
     related: ["MySQL", "SQLite", "DBMS"],
     project: "Wise Trade",
     projectHref: "/problems/wise-trade",
-    githubHref: "https://github.com/artham/wise-trade",
+    githubHref: "https://github.com/artham-bhardwaj/wise-trade",
   },
   {
     name: "Prometheus",
@@ -105,7 +105,7 @@ export const technologyExplorer = [
     related: ["Grafana", "Micrometer", "Observability"],
     project: "SentinelX",
     projectHref: "/problems/sentinelx",
-    githubHref: "https://github.com/artham/sentinelx",
+    githubHref: "https://github.com/artham-bhardwaj/sentinelx",
   },
   {
     name: "Grafana",
@@ -114,7 +114,7 @@ export const technologyExplorer = [
     related: ["Prometheus", "Micrometer", "Observability"],
     project: "SentinelX",
     projectHref: "/problems/sentinelx",
-    githubHref: "https://github.com/artham/sentinelx",
+    githubHref: "https://github.com/artham-bhardwaj/sentinelx",
   },
   {
     name: "Data Structures & Algorithms",
@@ -123,7 +123,7 @@ export const technologyExplorer = [
     related: ["Arrays", "Strings", "Hashing", "Binary Search", "Dynamic Programming"],
     project: "Problem Solving",
     projectHref: "/#problem-solving",
-    githubHref: "https://github.com/artham",
+    githubHref: "https://github.com/artham-bhardwaj",
   },
 ];
 
