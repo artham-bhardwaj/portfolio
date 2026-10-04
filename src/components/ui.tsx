@@ -243,7 +243,7 @@ export function DailyChallenge() {
       "✓ Backend Engineering",
       "✓ Problem Solving",
       "✓ SentinelX",
-      "✓ Wise Trade",
+      "✓ ChangeGuard",
       "✓ Education",
       "4/4 checks passed",
       "Verdict: INTERVIEW ✓",
