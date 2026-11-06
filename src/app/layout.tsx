@@ -29,7 +29,7 @@ const description =
   "Software Engineer focused on Java, Spring Boot, backend systems, observability, and real-world engineering projects.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://artham.dev"),
+  metadataBase: new URL("https://portfolio-bay-five-60.vercel.app"),
   title: {
     default: "Artham Bhardwaj — Software Engineer | Java & Spring Boot",
     template: "%s · Artham Bhardwaj",
