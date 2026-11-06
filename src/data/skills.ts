@@ -1,11 +1,15 @@
 export const skillGroups = [
   {
     title: "Languages",
-    items: ["Java", "Python", "C++", "SQL"],
+    items: ["Java", "Python", "TypeScript", "C++", "SQL"],
   },
   {
     title: "Backend",
-    items: ["Spring Boot", "Spring MVC", "Spring Data JPA", "Hibernate", "REST APIs", "Microservices", "Django", "Flask"],
+    items: ["Spring Boot", "Spring MVC", "Spring Data JPA", "Hibernate", "REST APIs", "Microservices", "FastAPI", "SQLAlchemy", "Django", "Flask"],
+  },
+  {
+    title: "Frontend",
+    items: ["React", "Next.js", "Tailwind CSS", "React Flow", "Vite"],
   },
   {
     title: "Databases",
@@ -13,7 +17,7 @@ export const skillGroups = [
   },
   {
     title: "Infrastructure & Tools",
-    items: ["Git", "Maven", "Docker", "Kubernetes", "Prometheus", "Grafana", "Micrometer"],
+    items: ["Git", "Maven", "Docker", "Kubernetes", "Prometheus", "Grafana", "Micrometer", "Playwright", "Vitest"],
   },
   {
     title: "Fundamentals",
@@ -42,6 +46,20 @@ export const capabilityGroups = [
     technologies: ["Prometheus", "Grafana", "Micrometer", "Docker", "Monitoring"],
     project: "SentinelX",
     projectHref: "/problems/sentinelx",
+  },
+  {
+    title: "Simulation & Developer Tools",
+    description: "Interactive tools that model real system behavior, built with deterministic engines and thorough test suites.",
+    technologies: ["TypeScript", "React", "React Flow", "Vitest", "Puppeteer"],
+    project: "Flowzen",
+    projectHref: "/problems/flowzen",
+  },
+  {
+    title: "Automation & Data Pipelines",
+    description: "Polite, rate-limited data collection, scoring and workflow automation with human approval built in.",
+    technologies: ["FastAPI", "SQLAlchemy", "Alembic", "Playwright", "SQLite"],
+    project: "JobPilot",
+    projectHref: "/problems/jobpilot",
   },
   {
     title: "AI-Assisted Engineering",
@@ -79,6 +97,24 @@ export const technologyExplorer = [
     project: "ChangeGuard",
     projectHref: "/problems/changeguard",
     githubHref: "https://github.com/artham-bhardwaj/changeguard",
+  },
+  {
+    name: "TypeScript & React",
+    category: "Frontend",
+    where: "Used to build Flowzen: a React Flow design canvas, a deterministic discrete-event simulation engine, and playback views, covered by 287 unit tests and Puppeteer smoke tests.",
+    related: ["React Flow", "Vite", "Vitest", "Next.js"],
+    project: "Flowzen",
+    projectHref: "/problems/flowzen",
+    githubHref: "https://github.com/artham-bhardwaj/flowzen",
+  },
+  {
+    name: "FastAPI",
+    category: "Backend",
+    where: "Used in JobPilot as a modular monolith (web routes and CLI over one service layer) and in the Swing Trading Assistant to serve analysis endpoints.",
+    related: ["SQLAlchemy", "Alembic", "Pydantic", "Jinja2"],
+    project: "JobPilot",
+    projectHref: "/problems/jobpilot",
+    githubHref: "https://github.com/artham-bhardwaj/jobpilot",
   },
   {
     name: "Django",

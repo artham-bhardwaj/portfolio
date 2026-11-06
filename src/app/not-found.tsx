@@ -1,21 +1,20 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 
 export default function NotFound() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-zinc-950 px-4 py-20 text-zinc-100">
-      <div className="w-full max-w-xl rounded-xl border border-zinc-800 bg-zinc-900/80 p-8 sm:p-10">
-        <p className="text-xs uppercase tracking-[0.35em] text-zinc-500">404. Page Not Found</p>
-        <h1 className="mt-4 text-3xl font-semibold sm:text-4xl">Given a URL that does not exist, return the user to a valid route.</h1>
-        <p className="mt-4 text-sm leading-7 text-zinc-400">
-          Input: <span className="font-mono text-zinc-200">currentPath = unknown</span>
-        </p>
-        <p className="mt-2 text-sm leading-7 text-zinc-400">
-          Expected Output: <span className="font-mono text-zinc-200">&quot;/&quot;</span>
-        </p>
-        <p className="mt-4 text-sm text-zinc-500">Constraints: recruiterCuriosity ≥ 0</p>
-        <Link href="/" className="mt-8 inline-flex items-center gap-2 rounded-md border border-zinc-700 bg-zinc-100 px-4 py-2 text-sm font-medium text-zinc-950 transition hover:bg-zinc-200">
-          Return Home <ArrowRight size={16} />
+    <main className="relative grid min-h-screen place-items-center overflow-hidden px-5 py-20">
+      <div className="bg-grid pointer-events-none absolute inset-0" aria-hidden="true" />
+      <div className="relative w-full max-w-lg text-center">
+        <p className="font-mono text-sm text-accent">404</p>
+        <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">Page not found</h1>
+        <div className="mx-auto mt-8 max-w-sm rounded-xl border border-border bg-surface p-4 text-left font-mono text-xs leading-6 text-muted">
+          <p><span className="text-subtle">input:</span> currentPath = <span className="text-fg">unknown</span></p>
+          <p><span className="text-subtle">expected:</span> <span className="text-fg">&quot;/&quot;</span></p>
+          <p><span className="text-subtle">constraints:</span> recruiterCuriosity ≥ 0</p>
+        </div>
+        <Link href="/" className="mt-8 inline-flex h-11 items-center gap-2 rounded-full bg-fg px-5 text-sm font-medium text-bg transition hover:opacity-85">
+          <ArrowLeft size={16} /> Back home
         </Link>
       </div>
     </main>

@@ -1,29 +1,42 @@
+import type { Metadata } from "next";
 import Link from "next/link";
-import { Footer, Navbar, StatusBadge } from "@/components/ui";
-import { projects } from "@/data/projects";
+import { ArrowRight } from "lucide-react";
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
+import { StatusBadge } from "@/components/badges";
+import { projects, splitTitle } from "@/data/projects";
+
+export const metadata: Metadata = { title: "Solutions" };
 
 export default function SolutionsPage() {
   return (
-    <div className="min-h-screen bg-zinc-950 text-zinc-100">
+    <>
       <Navbar />
-      <main className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
-        <div className="rounded-xl border border-zinc-800 bg-zinc-900/70 p-6 sm:p-8">
-          <p className="text-xs uppercase tracking-[0.35em] text-zinc-500">Solutions</p>
-          <h1 className="mt-2 text-2xl font-semibold text-zinc-100 sm:text-3xl">Submission history.</h1>
-          <div className="mt-6 space-y-3">
-            {projects.map((project) => (
-              <Link key={project.slug} href={`/problems/${project.slug}`} className="flex flex-col gap-3 rounded-lg border border-zinc-800 bg-zinc-950/70 p-4 transition hover:border-zinc-700 hover:bg-zinc-900 sm:flex-row sm:items-center sm:justify-between">
-                <div>
-                  <div className="text-sm font-medium text-zinc-100">Accepted {project.title}</div>
-                  <div className="mt-1 text-sm text-zinc-500">{project.id} • {project.topics.slice(0, 3).join(" • ")}</div>
+      <main className="mx-auto max-w-4xl px-5 py-12 sm:px-8 sm:py-16">
+        <header className="fade-up">
+          <p className="font-mono text-xs text-accent">Solutions</p>
+          <h1 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">Submission history</h1>
+        </header>
+        <ul className="mt-12 divide-y divide-border rounded-2xl border border-border bg-surface">
+          {projects.map((project) => (
+            <li key={project.slug}>
+              <Link href={`/problems/${project.slug}`} className="group flex items-center justify-between gap-4 p-5 transition hover:bg-surface-2/60 sm:p-6">
+                <div className="min-w-0">
+                  <p className="font-medium">{splitTitle(project.title).name}</p>
+                  <p className="mt-1 truncate font-mono text-xs text-subtle">
+                    #{project.id} · {project.topics.slice(0, 3).join(" · ")}
+                  </p>
                 </div>
-                <StatusBadge status={project.status} />
+                <div className="flex shrink-0 items-center gap-3">
+                  <StatusBadge status={project.status} />
+                  <ArrowRight size={16} className="text-subtle transition group-hover:translate-x-0.5 group-hover:text-fg" />
+                </div>
               </Link>
-            ))}
-          </div>
-        </div>
+            </li>
+          ))}
+        </ul>
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
